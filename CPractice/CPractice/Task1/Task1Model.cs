@@ -11,7 +11,7 @@ namespace CPractice.Task1
     {
         internal Task1Model()
         {
-            Num1 = 1;
+            this.AllReset();
         }
 
         // "数字１"と対応
@@ -74,8 +74,8 @@ namespace CPractice.Task1
         }
 
         // "商"の計算結果と対応
-        private int _divideResult;
-        public int DivideResult
+        private string _divideResult;
+        public string DivideResult
         {
             get { return this._divideResult; }
             set
@@ -85,6 +85,36 @@ namespace CPractice.Task1
             }
         }
 
+        /// <summary>
+        /// task1内のすべての値をリセットする
+        /// </summary>
+        internal void AllReset()
+        {
+            this.Num1 = (int)default;
+            this.Num2 = (int)default;
+
+            this.PlusResult  =  (int)default;
+            this.MinusResult = (int)default;
+            this.MultiResult = (int)default;
+            this.DivideResult = ((int)default).ToString();
+        }
+
+        internal void AddNumber()
+        {
+            this.PlusResult = this.Num1 + this.Num2;
+        }
+        internal void MinusNumber()
+        {
+            this.MinusResult = this.Num1 - this.Num2;
+        }
+        internal void MultipleNumber()
+        {
+            this.MultiResult = this.Num1 * this.Num2;
+        }
+        internal void DivideNumber()
+        {
+            this.DivideResult = (this.Num2 == 0) ? "-" : (this.Num1 / this.Num2).ToString();
+        }
 
         // MEMO : ViewModelの変更を画面に通知するための定型
         public event PropertyChangedEventHandler? PropertyChanged;

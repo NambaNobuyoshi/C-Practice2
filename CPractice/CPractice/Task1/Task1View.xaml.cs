@@ -22,12 +22,13 @@ namespace CPractice.Task1
     public partial class Task1View : UserControl
     {
         Task1Event task1Event;
+        internal Task1Model task1Model = new Task1Model();
 
         public Task1View()
         {
             InitializeComponent();
 
-            this.DataContext = new Task1Model();
+            this.DataContext = task1Model;
 
             task1Event = new Task1Event(this);
         }

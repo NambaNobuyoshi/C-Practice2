@@ -13,12 +13,11 @@ namespace CPractice.Task1
     /// </summary>
     internal class Task1Event
     {
-        Task1Model model;
-
+        Task1Model task1Model;
 
         internal Task1Event(Task1View view)
         {
-            //this.model = vm.task1Model;
+            this.task1Model = view.task1Model;
 
             this.AttatchEvent(view);
         }
@@ -29,6 +28,12 @@ namespace CPractice.Task1
         /// <param name="window"></param>
         public void AttatchEvent(Task1View view)
         {
+
+            TextBlock num1 = view.FindName("Num1") as TextBlock;
+            if(num1 != null)
+            {
+
+            }
 
             // "計算"ボタン
             Button culcButton = view.FindName("Task1Culc") as Button;
@@ -52,7 +57,10 @@ namespace CPractice.Task1
         /// <param name="e"></param>
         private void DoCulculation(object sender, RoutedEventArgs e)
         {
-
+            this.task1Model.AddNumber();
+            this.task1Model.MinusNumber();
+            this.task1Model.MultipleNumber();
+            this.task1Model.DivideNumber();
         }
 
         /// <summary>
@@ -62,7 +70,7 @@ namespace CPractice.Task1
         /// <param name="e"></param>
         private void DoReset(object sender, RoutedEventArgs e)
         {
-
+            this.task1Model.AllReset();
         }
     }
 }

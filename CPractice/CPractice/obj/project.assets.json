@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Visual studio\\CPractice\\CPractice\\CPractice.csproj",
+      "projectUniqueName": "D:\\gitwork\\C-Practice2\\CPractice\\CPractice\\CPractice.csproj",
       "projectName": "CPractice",
-      "projectPath": "D:\\Visual studio\\CPractice\\CPractice\\CPractice.csproj",
+      "projectPath": "D:\\gitwork\\C-Practice2\\CPractice\\CPractice\\CPractice.csproj",
       "packagesPath": "C:\\Users\\ramen\\.nuget\\packages\\",
-      "outputPath": "D:\\Visual studio\\CPractice\\CPractice\\obj\\",
+      "outputPath": "D:\\gitwork\\C-Practice2\\CPractice\\CPractice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ramen\\AppData\\Roaming\\NuGet\\NuGet.Config",

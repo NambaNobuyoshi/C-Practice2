@@ -23,3 +23,28 @@ D:\Visual studio\CPractice\CPractice\obj\Debug\net6.0-windows\ref\CPractice.dll
 D:\Visual studio\CPractice\CPractice\obj\Debug\net6.0-windows\Task1\Task1View.g.cs
 D:\Visual studio\CPractice\CPractice\obj\Debug\net6.0-windows\Task1\Task1View.baml
 D:\Visual studio\CPractice\CPractice\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\bin\Debug\net6.0-windows\CPractice.exe
+D:\gitwork\C-Practice2\CPractice\CPractice\bin\Debug\net6.0-windows\CPractice.deps.json
+D:\gitwork\C-Practice2\CPractice\CPractice\bin\Debug\net6.0-windows\CPractice.runtimeconfig.json
+D:\gitwork\C-Practice2\CPractice\CPractice\bin\Debug\net6.0-windows\CPractice.dll
+D:\gitwork\C-Practice2\CPractice\CPractice\bin\Debug\net6.0-windows\CPractice.pdb
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.csproj.AssemblyReference.cache
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CSS\CustomStyle.baml
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\BasicCTask.g.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\Task1\Task1View.g.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\App.g.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice_MarkupCompile.cache
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice_MarkupCompile.lref
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\BasicCTask.baml
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\Task1\Task1View.baml
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.g.resources
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.AssemblyInfoInputs.cache
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.AssemblyInfo.cs
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.csproj.CoreCompileInputs.cache
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.dll
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\refint\CPractice.dll
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.pdb
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\CPractice.genruntimeconfig.cache
+D:\gitwork\C-Practice2\CPractice\CPractice\obj\Debug\net6.0-windows\ref\CPractice.dll
