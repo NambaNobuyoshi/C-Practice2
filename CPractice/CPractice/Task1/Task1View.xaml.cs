@@ -32,5 +32,17 @@ namespace CPractice.Task1
 
             task1Event = new Task1Event(this);
         }
+
+        /// <summary>
+        /// コピーペーストできないようにする
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CannotPaste(object sender, ExecutedRoutedEventArgs e)
+        {
+            e.Handled = (e.Command == ApplicationCommands.Paste);
+        }
     }
+
+    
 }

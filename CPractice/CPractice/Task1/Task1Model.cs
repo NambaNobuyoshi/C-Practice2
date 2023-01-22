@@ -15,8 +15,8 @@ namespace CPractice.Task1
         }
 
         // "数字１"と対応
-        private int _num1;
-        public int Num1
+        private string _num1;
+        public string Num1
         {
             get { return this._num1; }
             set
@@ -26,8 +26,8 @@ namespace CPractice.Task1
             }
         }
         // "数字２"と対応
-        private int _num2;
-        public int Num2
+        private string _num2;
+        public string Num2
         {
             get { return this._num2; }
             set
@@ -90,8 +90,8 @@ namespace CPractice.Task1
         /// </summary>
         internal void AllReset()
         {
-            this.Num1 = (int)default;
-            this.Num2 = (int)default;
+            this.Num1 = string.Empty;
+            this.Num2 = string.Empty;
 
             this.PlusResult  =  (int)default;
             this.MinusResult = (int)default;
@@ -101,19 +101,19 @@ namespace CPractice.Task1
 
         internal void AddNumber()
         {
-            this.PlusResult = this.Num1 + this.Num2;
+            this.PlusResult = int.Parse(this.Num1) + int.Parse(this.Num2) ;
         }
         internal void MinusNumber()
         {
-            this.MinusResult = this.Num1 - this.Num2;
+            this.MinusResult = int.Parse(this.Num1) - int.Parse(this.Num2);
         }
         internal void MultipleNumber()
         {
-            this.MultiResult = this.Num1 * this.Num2;
+            this.MultiResult = int.Parse(this.Num1) * int.Parse(this.Num2);
         }
         internal void DivideNumber()
         {
-            this.DivideResult = (this.Num2 == 0) ? "-" : (this.Num1 / this.Num2).ToString();
+            this.DivideResult = (int.Parse(this.Num2) == 0) ? "-" : (int.Parse(this.Num1) / int.Parse(this.Num2)).ToString();
         }
 
         // MEMO : ViewModelの変更を画面に通知するための定型

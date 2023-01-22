@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace CPractice.Task1
 {
@@ -29,10 +31,17 @@ namespace CPractice.Task1
         public void AttatchEvent(Task1View view)
         {
 
-            TextBlock num1 = view.FindName("Num1") as TextBlock;
+            TextBox num1 = view.FindName("Num1Text") as TextBox;
             if(num1 != null)
             {
+                num1.PreviewTextInput += new TextCompositionEventHandler(this.CheckInputIsNum);
+                
+            }
 
+            TextBox num2 = view.FindName("Num2Text") as TextBox;
+            if(num1 != null)
+            {
+                num2.PreviewTextInput += new TextCompositionEventHandler(this.CheckInputIsNum);
             }
 
             // "計算"ボタン
@@ -47,6 +56,31 @@ namespace CPractice.Task1
             if (resetButton != null)
             {
                 resetButton.Click += new RoutedEventHandler(this.DoReset);
+            }
+        }
+
+        /// <summary>
+        /// 入力テキストが数字ではない場合、イベントを終了する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckInputIsNum(object sender, TextCompositionEventArgs e)
+        {
+            bool finishEvent = false;
+
+            // 0~9が入力されたときのみイベントを継続させる
+            e.Handled = !new Regex("[0-9]").IsMatch(e.Text);
+        }
+        /// <summary>
+        /// コピペできないようにする
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CheckPasteIsNum(object sender, ExecutedRoutedEventArgs e)
+        {
+            if(e.Command == ApplicationCommands.Paste)
+            {
+                e.Handled = true;
             }
         }
 

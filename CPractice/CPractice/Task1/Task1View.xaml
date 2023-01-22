@@ -21,9 +21,11 @@
             <TextBlock Text="タスク１ : 計算処理" Style="{StaticResource Midashi}"/>
             <StackPanel Orientation="Horizontal" Margin="20,0,0,0">
                 <TextBlock Text="数字１："/>
-                <TextBox Text="{Binding Num1}" Width="40"/>
+                <TextBox Name ="Num1Text"  Text="{Binding Num1}" Width="40" 
+                         InputMethod.IsInputMethodEnabled="False" CommandManager.PreviewExecuted="CannotPaste"/>
                 <TextBlock Text="数字２：" Margin="20,0,0,0"/>
-                <TextBox Text="{Binding Num2}" Width="40"/>
+                <TextBox Name="Num2Text" Text="{Binding Num2}" Width="40" 
+                         InputMethod.IsInputMethodEnabled="False" CommandManager.PreviewExecuted="CannotPaste"/>
                 <Button x:Name="Task1Culc" Content="計算実行" Margin="30,0,0,0"/>
                 <Button x:Name="Task1Reset" Content="リセット" Margin="30,0,0,0"/>
             </StackPanel>
